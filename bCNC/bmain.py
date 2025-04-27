@@ -635,8 +635,8 @@ class Application(Tk, Sender):
         Sender.quit(self)
         self.saveConfig()
         self.destroy()
-        if Utils.errors and Utils._errorReport:
-            Utils.ReportDialog.sendErrorReport()
+        # if Utils.errors and Utils._errorReport:
+        #     Utils.ReportDialog.sendErrorReport()
 
     # ---------------------------------------------------------------------
     def configWidgets(self, var, value):
